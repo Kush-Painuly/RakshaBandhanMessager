@@ -1,17 +1,4 @@
 import React, { useState } from "react";
-import Rakhi1 from "../../assets/Lumba Rakhi.jpg";
-import Rakhi2 from "../../assets/Rudra Rakhi.jpg";
-import Rakhi3 from "../../assets/Sandalwood Rakkhi.jpg";
-import Rakhi4 from "../../assets/Silver Rakhi.jpg";
-import Rakhi5 from "../../assets/Divine Rakhi.jpg";
-import Rakhi6 from "../../assets/Braided Rakhi.jpg";
-import Rakhi7 from "../../assets/HandMade Rakhi.jpg";
-import Rakhi8 from "../../assets/Kids Rakhi.jpg";
-import Rakhi9 from "../../assets/Pearl Rakhi.jpg";
-import Rakhi10 from "../../assets/Kundan Rakhi.jpg";
-import Rakhi11 from "../../assets/Bead Rakhi.jpg";
-import Rakhi12 from "../../assets/Designer Rakhi.jpg";
-
 import "../../styles/Rakhi.css";
 const Rakhis = () => {
   const Rakhi = [
@@ -23,57 +10,57 @@ const Rakhis = () => {
     {
       id: 2,
       name: "Braided Rakhis",
-      image: Rakhi6,
+      image: 'https://img2.ogaanindia.com/pub/media/catalog/product/cache/3f6619daccdb194398d06464ab49fa6e/p/p/ppsrl2061.jpg',
     },
     {
       id: 3,
       name: "Sandalwood Rakhis",
-      image: Rakhi3,
+      image: 'https://5.imimg.com/data5/SELLER/Default/2024/2/391547729/OA/SE/ZB/120577758/kc786613.webp',
     },
     {
       id: 4,
       name: "Divine Rakhis",
-      image: Rakhi4,
+      image: 'https://www.unrealgift.com/uploads/products/divine-rakhi-set-with-kaju-phool-sweets-c.jpg',
     },
     {
       id: 5,
       name: "Silver Rakhis",
-      image: Rakhi5,
+      image: "https://www.rakhiz.com/catalog/rakhi/RZ21-264.jpg",
     },
     {
       id: 6,
       name: "Rudra Rakhis",
-      image: Rakhi2,
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5RDos7S3WdctYzaudKrrbnUvmviWt3rBAg&s',
     },
     {
       id: 7,
       name: "HandMade Rakhis",
-      image: Rakhi7,
+      image: "https://www.rakhiz.com/catalog/rakhi/f2_IMG_4388.jpg",
     },
     {
       id: 8,
       name: "Kids Rakhis",
-      image: Rakhi8,
+      image: 'https://res.cloudinary.com/joinventures/f_auto,q_auto,t_pnopt19prodlp/products/p-cute-kids-rakhi-set-of-3-262575-m.jpg',
     },
     {
       id: 9,
       name: "pearl Rakhis",
-      image: Rakhi9,
+      image: "https://rukminim2.flixcart.com/image/850/1000/krwec280/rakhi-set/u/8/x/2-cr-24-red-ratgal-white-pearl-original-imag5hfu5n6bnfwf.jpeg?q=90&crop=false",
     },
     {
       id: 10,
       name: "kundan Rakhis",
-      image: Rakhi10,
+      image: 'https://www.rakhiz.com/catalog/rakhi/IMG3_1218.jpg',
     },
     {
       id: 11,
       name: "bead Rakhis",
-      image: Rakhi11,
+      image: 'https://www.zakarto.com/wp-content/uploads/2019/08/7002332630.jpg',
     },
     {
       id: 12,
       name: "designer Rakhis",
-      image: Rakhi12,
+      image: 'https://www.saugatonline.com/products_image/fcb0ad5be591ecc9ce275df46f78a46c.jpg',
     },
   ];
 
