@@ -100,10 +100,12 @@ const Rakhis = () => {
     
     const whatsappMessage = `${message}\n\nFrom: ${from}\n\n  ${imageUrl}`;
 
-    const whatsappURL = `https://web.whatsapp.com/send?phone=${receiverContact}&text=${encodeURIComponent(whatsappMessage)}`;
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+
+    const whatsappURL = `whatsapp://send?phone=${receiverContact}&text=${encodedMessage}`;
 
 
-    window.open(whatsappURL,"_blank");
+    window.location.href = whatsappURL;
 
     handleCloseModal();
   }
