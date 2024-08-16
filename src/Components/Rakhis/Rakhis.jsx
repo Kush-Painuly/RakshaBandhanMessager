@@ -80,7 +80,6 @@ const Rakhis = () => {
   const [selectedRakhi, setSelectedRakhi] = useState(null);
   const [from,setFrom] = useState("");
   const [to,setTo] = useState("");
-  const [senderContact,setSenderContact] = useState("");
   const [receiverContact,setReceiverContact] = useState("");
 
   const handleRakhiClicked = (rakhi) => {
@@ -91,24 +90,29 @@ const Rakhis = () => {
     setSelectedRakhi(null);
   }
 
-  const handleSubmit =(e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    
-    const message =`Wish you Happy Raksha Bandhan ${to} !`;
-
+  
+    const message = `Wish you Happy Raksha Bandhan ${to} !`;
     const imageUrl = selectedRakhi.image;
-    
-    const whatsappMessage = `${message}\n\nFrom: ${from}\n\n  ${imageUrl}`;
-
+    const whatsappMessage = `${message}\n\nFrom: ${from}\n\n${imageUrl}`;
     const encodedMessage = encodeURIComponent(whatsappMessage);
-
+  
     const whatsappURL = `whatsapp://send?phone=${receiverContact}&text=${encodedMessage}`;
-
-
+    const whatsappWebURL = `https://wa.me/${receiverContact}?text=${encodedMessage}`;
+  
+    // Try to open with whatsapp:// scheme, fallback to WhatsApp Web
     window.location.href = whatsappURL;
-
+  
+    setTimeout(() => {
+      if (!document.hidden) {
+        window.location.href = whatsappWebURL;
+      }
+    }, 200);
+  
     handleCloseModal();
-  }
+  };
+  
 
   return (
     <>
@@ -152,10 +156,6 @@ const Rakhis = () => {
               <label>
                 To:
                 <input type="text" name="to" required onChange={(e)=>setTo(e.target.value)} />
-              </label>
-              <label>
-                Sender Contact:
-                <input type="tel" name="senderContact" required onChange={(e)=>setSenderContact(e.target.value)} />
               </label>
               <label>
                 Receiver Contact:
