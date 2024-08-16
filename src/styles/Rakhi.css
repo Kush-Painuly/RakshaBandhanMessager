@@ -1,0 +1,161 @@
+.rakhis-bg {
+  background-image: url(../assets/rakhis-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.rakhi-selection-container {
+  text-align: center;
+  color: white;
+  padding: 2rem 4rem;
+}
+
+.rakhi-selection-container h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.rakhi-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.rakhi-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 20%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+}
+
+.rakhi-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.rakhi-card p {
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rakhi-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for tablets */
+@media only screen and (max-width: 768px) {
+  .rakhi-card {
+    width: 45%;
+  }
+}
+
+/* Responsive design for mobile devices */
+@media only screen and (max-width: 480px) {
+  .rakhi-card {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .rakhi-card {
+    width: 100%;
+  }
+}
+
+
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Close button */
+  .modal-close {
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Modal image */
+  .modal-image {
+    width: 80%; 
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Modal form */
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .modal-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .modal-form input {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .modal-form button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
