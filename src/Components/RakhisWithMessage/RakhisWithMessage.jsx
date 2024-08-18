@@ -84,9 +84,8 @@ const RakhisWithMessage = () => {
         messageContent = `${voiceMessageURL}\n\n ${cardImageURL}]`;
       }
 
-      const whatsappURL = `https://web.whatsapp.com/send?phone=${receiverContact}&text=${encodeURIComponent(
-        messageContent
-      )}`;
+      const whatsappURL = `https://wa.me/${receiverContact}?text=${encodeURIComponent(messageContent)}`;
+
 
       console.log("WhatsApp URL:", whatsappURL);
 
