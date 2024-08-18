@@ -24,10 +24,12 @@ const Home = () => {
 
         <div className="content">
           <div className="content-btn">
-            <Link to='/rakhis'>
+            <Link to="/rakhis">
               <button>Send Rakhis</button>
             </Link>
-            <button>Send Rakhis with messages</button>
+            <Link to="/customrakhis">
+              <button>Send Rakhis with messages</button>
+            </Link>
           </div>
         </div>
       </div>

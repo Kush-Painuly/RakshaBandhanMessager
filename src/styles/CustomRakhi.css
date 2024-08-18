@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  justify-content: space-between; /* Space between the form and canvas */
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  background-image: url("/rakhiwithmessage-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.customize-rakhi-container {
+  flex: 1 1 45%; /* Flex basis to allow form to take 45% of the width */
+  max-width: 600px;
+  padding: 20px;
+  background-color: #dbd6d687;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-selection {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.card-selection img {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-selection img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+
+form select,
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+form button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #5cb85c;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center; /* Center the submit button */
+}
+
+form button[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+form button[type="button"] {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+form button[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+.rakhi-canvas {
+  flex: 1 1 45%; /* Flex basis to allow canvas to take 45% of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #dbd6d687;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rakhi-canvas canvas {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customize-rakhi-container,
+  .rakhi-canvas {
+    flex: 1 1 100%; /* 100% width on smaller screens */
+    max-width: 100%;
+  }
+
+  .rakhi-canvas {
+    margin-top: 20px;
+  }
+}
